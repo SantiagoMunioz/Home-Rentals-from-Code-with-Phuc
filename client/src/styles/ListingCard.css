@@ -1,0 +1,70 @@
+.listingCard-cont{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: black;
+  border-radius: 20px;
+  .listingCardSlider-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    height: 70%;
+    .slider{  
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+      height: 30%;
+      .slide{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        .slide-image{
+          z-index: 0;
+          width: 250px;
+          height: 200px;
+          border-radius: 20px;
+        }
+        .sliderButton{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          font-size: 1.5rem;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          cursor: pointer;
+          background: white;
+          color: black;
+          &.inverted{ filter: invert(1); }
+          &:hover{
+            font-weight: bolder;
+            text-shadow: 0 0 5px white;
+          }
+        }
+      }
+    }
+  }
+  .favorite-button{
+    position: relative;
+    bottom: 80%;
+    left: 10%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/icons/Heart-ico.png");
+    &.liked{ background-image: url("../assets/icons/Heart2-ico.png"); }
+    &.inverted{ filter: invert(1); }
+    &:hover{ transform: scale(1.2); }
+  }
+}

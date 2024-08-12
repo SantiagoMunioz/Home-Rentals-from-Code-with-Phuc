@@ -1,0 +1,95 @@
+@keyframes objOpacity {
+  from { opacity: 0%; }
+  to { opacity: 100%; }
+}
+
+.categories-cont{
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  width: 90%;
+  min-width: 350px;
+  .categories-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    .categories-link{
+      text-decoration: none;
+      cursor: pointer;
+      width: 320px;
+      height: 320px;
+      padding: 2%;
+      .categorySel{
+        display: flex;
+        flex-wrap: wrap;
+        width: 320px;
+        height: 320px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        width: 320px;
+        height: 320px;
+        overflow: auto;
+        .category-img{
+          max-width: 320px;
+          min-width: 200px;
+          max-height: 320px;
+          min-height: 200px;
+          border-radius: 15px;
+          border: none;
+        }
+        &:hover .category-img{ filter: grayscale(1) blur(2px); }
+        &:hover .category-overlay,
+        &:hover .category-text{
+          display: flex;
+        }
+        &:hover .category-overlay{
+          transform: scale(0.8);
+          animation: objOpacity 3s linear;
+          border-radius: 0px;
+        }
+        .category-overlay{
+          border-radius: 15px;
+          display: none;
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          background: rgba(0, 0, 0, .5);
+          transition: 1s linear;
+        }
+        .category-text{
+          width: 150px;
+          height: 150px;
+          position: absolute;
+          display: none;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          &:hover .category-icon,
+          &:hover .category-label{
+            filter: drop-shadow( 0 0 10px white);
+            text-shadow: 0 0 20px white;
+            font-weight: bolder;
+          }
+          .category-icon{
+            transition: 1s;
+            width: 100px;
+            height: 100px;
+          }
+          .category-label{
+            width: 100%;
+            text-align: center;
+            justify-content: baseline;
+            z-index: 1;
+            font-size: 1.5rem;
+          }
+        }
+      }
+      &:hover .category-overlay{ display: block; }
+    }
+  }
+}

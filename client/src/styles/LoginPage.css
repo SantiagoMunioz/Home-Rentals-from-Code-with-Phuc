@@ -1,0 +1,76 @@
+.logIn-cont{
+  transition: 1s;
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 500px;
+  padding: 5%;
+  justify-content: center;
+  align-items: center;
+  border-radius : 60% / 60% 60% 30% 30%;
+  &:hover{ border-radius : 20px; }
+  .home-link{
+    position: relative;
+    right: 20%;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  .home-link.light:hover{ text-shadow: 0 0 10px black; }
+  .home-link.dark:hover{ text-shadow: 0 0 10px white; }
+  .logIn-form{
+    display: flex;
+    flex-wrap: wrap;
+    height: 70%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .logIn-input{
+      color: white;
+      width: 90%;
+      text-align: center;
+      border: none;
+      border-bottom: 1px solid;
+      background: transparent;
+      outline: none;
+      font-size: 1rem;
+      font-weight: bolder;
+      &::placeholder{ color: white; }
+    }
+    .logIn-button{
+      width: 60%;
+      min-width: 150px;
+      height: 20%;
+      padding: .5%;
+      border-radius: 10px;
+      cursor: pointer;
+      outline: none;
+      background-size: cover;
+      color: white;
+      text-shadow: 0 0 5px black;
+      border: none;
+      font-size: 1.2rem;
+    }
+    .logIn-button.light:hover{
+      box-shadow: 0 0 10px white;
+      text-shadow: 0 0 10px black;
+    }
+    .logIn-button.dark:hover{
+      box-shadow: 0 0 10px black;
+      text-shadow: 0 0 10px white;
+    }
+  }
+  .signUp-link{
+    display: flex;
+    text-decoration: none;
+    height: 30px;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+      text-shadow: 0 0 5px white;
+      text-decoration-line: underline;
+    }
+  }
+}

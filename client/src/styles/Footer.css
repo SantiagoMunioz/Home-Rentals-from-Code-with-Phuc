@@ -1,0 +1,43 @@
+.footer-cont{
+  width: 90%;
+  height: 200px;
+  padding: 2%;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  .footer{
+    width: 15%;
+    min-height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    &.left .imgLogo{
+      width: 100px;
+      height: 100px;
+    }
+    &.right{
+      .iconImg{
+        width: 35px;
+        height: 35px;
+        &.inverted{
+          filter: invert(1);
+        }
+      }
+    }
+    .link{
+      text-decoration: none;
+      &:hover{
+        font-weight: bolder;
+      }
+    }
+    .links-cont{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+    }
+  }
+}

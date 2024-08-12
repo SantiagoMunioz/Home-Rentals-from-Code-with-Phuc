@@ -1,0 +1,23 @@
+{
+  "light" : {
+    "background" : "rgba(250, 250, 250 )",
+    "backgroundElement" : "rgba(200, 200, 200, .5)",
+    "backgroundButton" : "rgba(20, 200, 200)",
+    "color" : "black",
+    "border" : "2px solid black",
+    "borderColor" : "black",
+    "borderRadius" : "20px",
+    "backdropFilter" : "blur(2px)",
+    "textShadow" : "none"
+  },
+  "dark" : {
+    "background" : "rgba(0, 0, 30, .8)",
+    "backgroundElement" : "rgba(250, 250, 250, .25)",
+    "backgroundButton" : "rgba(20, 250, 250)",
+    "color" : "white",
+    "border" : "2px solid white",
+    "borderColor" : "white",
+    "borderRadius" : "20px",
+    "backdropFilter" : "blur(2px)"
+  }
+}
